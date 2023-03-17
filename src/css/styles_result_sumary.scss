@@ -106,7 +106,7 @@
 
 .summary-container {
     background-color: $color-White;
-    width: 50%;
+    width: $width-summary-container;
     position: absolute;
     top: 0;
     bottom: 0;
@@ -120,33 +120,69 @@
     
     article {
         border: none;
-        padding: $ptop-elements 0px;
+        padding: $ptop-elements 18px;
+        height: $item-height;
         border-radius: calc($radio-containers - 12px);
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        img {
+            width: $img-height;
+            height: $img-height;
+        }
+
+        p:last-child {
+            color: $color-Dark-gray-blue;
+            font-size: calc($font-size-paragraphs + 0px);
+
+            span {
+                color: $color-Dark-gray-blue;
+                opacity: 0.3;
+                font-weight: bold;
+            }
+        }
     }
 
     button {
         border-radius: $radio-containers;
         color: $color-White;
-        background: $background-gradient;
+        background: $color-Dark-gray-blue;
         border: none;
         cursor: pointer;
         padding: $ptop-elements 0px;
+        height: $item-height;
+        font-size: calc($font-size-paragraphs - 5px);
+        font-weight: bold;
+
+        &:hover {
+            background: $background-gradient;
+        }
     }
 
     .reaction {
         background: hsla(0, 100%, 67%, $opacity-sumary);
+        color: $color-Light-red;
+        font-weight: bold;
     }
 
     .memory {
         background: hsl(39, 100%, 56%, $opacity-sumary);
+        font-weight: bold;
+        color: $color-Orangey-yellow;
     }
 
     .verbal {
         background: hsl(166, 100%, 37%, $opacity-sumary);
+        font-weight: bold;
+        color: $color-Green-teal;
     }
 
     .visual {
         background: hsl(252, 100%, 67%, $opacity-sumary);
+        font-weight: bold;
+        color: $color-Violet-blue-circle;
     }
 
     // Media queries
@@ -154,5 +190,8 @@
         width: 100%;
         top: 350px;
         min-height: 400px;
+        margin-top: 60px;
+        padding-left:  $padding-mobile;
+        padding-right: $padding-mobile;
     }
 }

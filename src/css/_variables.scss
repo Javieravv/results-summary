@@ -26,16 +26,19 @@ $desktop: 1440px;
 
 // Container principal
 $min-height-main-container: 440px;
-$width-main-container: 600px;
+$width-main-container: 700px;
 $radio-containers: 25px;
-
 
 // Container Resultados
 $medidas-porcentaje: 150px;
-$width-result-container: 54%;
+$width-result-container: 50%;
 
 // Container summary
-$padding-left: 8%;
-$ptop-elements: 15px;
+$width-summary-container: 55%;
+$padding-left: 9%;
+$ptop-elements: 0px;
 $opacity-sumary: 0.1;
+$img-height: 20px;
+$item-height: 50px;
+$padding-mobile: $padding-left;
 

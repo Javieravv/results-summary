@@ -1,11 +1,11 @@
 import React from 'react'
 
-export const Result = () => {
+export const Result = ( { averageScore }) => {
   return (
     <section className='result-container'>
         <h4>Your Result</h4>
         <div className='porcent-result'>
-            <p>76</p>
+            <p>{averageScore}</p>
             <p>of 100</p>
         </div>
         <h3>Great</h3>
