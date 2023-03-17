@@ -66,7 +66,8 @@
     }
 
     .porcent-result {
-        background-color: $color-Violet-blue-circle;
+        // background-color: $color-Violet-blue-circle;
+        background: $background-gradient-average;
         // padding: 30px;
         width: $medidas-porcentaje;
         height: $medidas-porcentaje;
@@ -98,7 +99,7 @@
     // Media queries
     @media screen and (max-width: $mobile) {
         width: 100%;
-        min-height: 400px;
+        min-height: 350px;
         margin-bottom: 0px;
         border-radius: 0px 0px $radio-containers $radio-containers;
     }
@@ -188,8 +189,8 @@
     // Media queries
     @media screen and (max-width: $mobile) {
         width: 100%;
-        top: 350px;
-        min-height: 400px;
+        top: 280px;
+        min-height: 500px;
         margin-top: 60px;
         padding-left:  $padding-mobile;
         padding-right: $padding-mobile;
